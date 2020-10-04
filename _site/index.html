@@ -1,312 +1,598 @@
-<!doctype html>
-
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="我是kylis，一个正在路上的PM">
+    <meta name="keyword"  content="kylis, 产品, Blog">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>kylis's Blog</title>
+
+    <link rel="canonical" href="http://localhost:4000/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-	Personal
-
-	Personal Theme by https://jekyllthemes.io
-	Premium + free Jekyll themes for your blog or website.
-
-	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
 
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-	<!-- Page Info -->
-	<link rel="shortcut icon" href="/images/favicon.png">
-	<title>Personal – A sleek, modern Jekyll theme for personal websites.</title>
-	<meta name="description" content="A sleek, modern Jekyll theme for personal websites. Personal is the perfect theme for developers, designers and other creatives.">
-
-	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Personal – A sleek, modern Jekyll theme for personal websites.">
-	<meta name="twitter:description" content="A sleek, modern Jekyll theme for personal websites. Personal is the perfect theme for developers, designers and other creatives.">
-	<meta name="twitter:image:src" content="http://localhost:4000/images/demo/home.jpg">
-
-	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Personal – A sleek, modern Jekyll theme for personal websites." />
-	<meta property="og:description" content="A sleek, modern Jekyll theme for personal websites. Personal is the perfect theme for developers, designers and other creatives." />
-	<meta property="og:image" content="http://localhost:4000/images/demo/home.jpg" />
-
-	
-	<!-- Font Embed Code -->
-	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
-	
-
-	<!-- Styles -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/css/style.css">
-	
-	<!-- Icons -->
-	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
-
-	
-	<!-- Custom Styles -->
-	<style></style>
-	
-
-	
-	<!-- Analytics Code -->
-	
-	
-
-	
-	<!-- Extra Header JS Code -->
-	
-	
-	
+    <!-- ga & ba script hoook -->
+    <script></script>
 </head>
 
 
-<body class="loading ajax-loading" data-site-url="http://localhost:4000" data-page-url="/">
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">INIX</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
 
 
-	<header class="header">
-
-	<div class="wrap">
-
-		
-		<a href="/" class="header__title">
-			Personal
-		</a>
-		
-
-		<div class="menu">
-			<div class="menu__toggle js-menu-toggle">
-				<div class="menu__toggle__icon"><span></span></div>
-			</div>
-			<div class="menu__wrap">
-				<ul class="menu__list">
-					
-					<li class="menu__list__item">
-						<a href="/" class="menu__list__item__link">Projects</a>
-					</li>
-					
-					<li class="menu__list__item">
-						<a href="/blog/" class="menu__list__item__link">Blog</a>
-					</li>
-					
-					<li class="menu__list__item">
-						<a href="/about" class="menu__list__item__link">About</a>
-					</li>
-					
-					<li class="menu__list__item">
-						<a href="/contact" class="menu__list__item__link">Contact</a>
-					</li>
-					
-				</ul>
-			</div>
-		</div>
-
-	</div>
-
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>INIX</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">Kylis’s Blog</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+        
 
-	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+<!-- USE SIDEBAR -->
+    <!-- Post Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
+    			
+<div class="post-preview">
+    <a href="/2019/09/02/%E4%B8%80%E4%B8%AA%E6%B4%BB%E8%B7%83%E7%A4%BE%E7%BE%A4%E6%80%8E%E4%B9%88%E7%82%BC%E6%88%90-%E7%A4%BE%E7%BE%A4%E8%BF%90%E8%90%A5%E6%A1%86%E6%9E%B6/">
+        <h2 class="post-title">
+            一个活跃社群怎么炼成|社群运营框架
+        </h2>
+        
+        <h3 class="post-subtitle">
+            无他，唯有用心尔
+        </h3>
+        
+        <div class="post-content-preview">
+            共同价值观
 
-	<div class="page-loader"></div>
+Slogan ：一句话概括社群的目的作用
 
-	
-	<div class="page">
+共同目标
 
-		<div class="page__content" data-page-title="Personal – A sleek, modern Jekyll theme for personal websites.">
+大目标：一个社群必须要有的共同方向，社群的存在意义
 
-			<section class="hero">
+小目标：
 
-	<div class="hero__image" style="background-image: url(/images/demo/home.jpg)">
-		<div class="hero__overlay"></div>
+
+  每天……
+  每周……
+  每月……
+  每人……
+
+
+（把社群的大目标进行拆解，变成可以轻松落地执行的事项）
+
+行为规范
+
+
+  每周至少参与一次社群发言
+  ……
+
+
+（对社群成员进行规范，一定程度提高社群准入，也是对沉默成员有一个及时的唤醒或劝退...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by kylis on September 2, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/09/02/%E5%BF%83%E6%82%A6%E7%A4%BE%E5%8C%BA-%E7%BB%99%E5%BF%83%E6%82%A6%E4%BF%B1%E4%B9%90%E9%83%A8%E5%81%9A%E4%B8%AAUGC%E7%A4%BE%E5%8C%BA/">
+        <h2 class="post-title">
+            心悦社区，给心悦俱乐部做个UGC社区
+        </h2>
+        
+        <h3 class="post-subtitle">
+            高价值用户值得用心对待
+        </h3>
+        
+        <div class="post-content-preview">
+            背景分析
+why 动机
+促活留存心悦会员，使其持续在腾讯游戏内充值
+
+where 竞品现状（举例）
+定义：
+
+
+  
+    优质PGC：内容有了解价值（文章点赞率）
+  
+  
+    优质UGC：能激起有可读性的评论互动（评论率、评论点赞率）
+  
+
+
+
+  
+    
+      腾讯内部
+      单游戏社区
+      王者营地
+      PGC为主，也有较好UGC氛围
+   ...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by kylis on September 2, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/08/18/%E4%BB%A5%E5%85%B4%E8%B6%A3%E5%B0%8F%E7%BB%84%E5%81%9A%E7%A4%BE%E4%BA%A4-%E9%A3%9E%E8%81%8A%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/">
+        <h2 class="post-title">
+            以兴趣小组做社交，飞聊产品分析
+        </h2>
+        
+        <h3 class="post-subtitle">
+            框架虽好，实现不易
+        </h3>
+        
+        <div class="post-content-preview">
+            背景
+行业市场背景
+2018-2019年，移动社交领域热点频频。多闪、聊天宝、飞聊前仆后继，短视频产品逐渐社区化。即时聊天领域QQ、微信地位难以撼动；伴随5g资费下降以及短视频的成熟，微信关系链复杂导致的社交压力，新的社交机会孕育，各家都在寻求机会弯道超车，占领社区社交产品高地。
+其中以兴趣社区切入社交是一个有潜力的突破点。
+
+产品背景
+
+  产品介绍
+    
+      产品定位：兴趣社...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by kylis on August 18, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/08/09/%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7%E6%8A%95%E7%A5%A8%E7%9A%84%E6%8E%92%E5%90%8D%E7%AE%97%E6%B3%95/">
+        <h2 class="post-title">
+            基于用户投票的排名算法
+        </h2>
+        
+        <h3 class="post-subtitle">
+            排名算法的粗略介绍
+        </h3>
+        
+        <div class="post-content-preview">
+            时段增量算法：
+一段时间内的某一动作增量（点赞等）的排名
+
+1
+2
+3
++部署简单，榜单内容更新快
+-不平滑，前小时top内容可能在下一小时沉底
+-缺乏旧内容淘汰机制，旧内容长期霸榜
+
+
+单向动作（点赞）+时间重力：
+点赞量与内容发布时间长短，进行计算并排名
+
++对旧内容有下沉处理，保证新优质内容的稳定露出
+
+
+
+P=内容得赞数；-1=忽略发帖人自己；T=发帖时间；+2=内容转载到自己网站平...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by kylis on August 9, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/08/09/%E4%BB%A5%E5%8D%B3%E5%88%BBapp%E4%B8%BA%E4%BE%8B-%E7%A4%BE%E4%BA%A4%E7%A4%BE%E5%8C%BA%E4%BA%A7%E5%93%81%E8%A1%8C%E4%B8%9A%E5%88%86%E6%9E%90/">
+        <h2 class="post-title">
+            以即刻app为例，社交社区产品行业分析
+        </h2>
+        
+        <h3 class="post-subtitle">
+            以自己目前粗浅的经验，分析一下社区社交产品行业
+        </h3>
+        
+        <div class="post-content-preview">
+            首先定义一下社交与社区的区别。
+我认为社交与社区的区别在于建立联系的载体不同。社交是先交流再内容，因人而建立联系；社区是先内容再交流，因内容而去认识人。
+社交产品的核心资产是关系链，而社区产品是内容。
+另外两者间也有很多其他差别：强关系-弱关系，私密-公开，同步实时-异步，平等交往-头部化。
+
+
+  
+    
+       
+      社区
+      社交
+    
+  
+  
+   ...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by kylis on August 9, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/08/04/Github-Page-+-Jekyll-%E8%B8%A9%E4%BA%86%E6%97%A0%E6%95%B0%E4%B8%AA%E5%9D%91%E5%90%8E-%E6%88%90%E5%8A%9F%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
+        <h2 class="post-title">
+            Github Page + Jekyll，踩了无数个坑后，成功搭建静态博客
+        </h2>
+        
+        <h3 class="post-subtitle">
+            没有最全面的教程，只有最适合的教程…
+        </h3>
+        
+        <div class="post-content-preview">
+            搭建这个博客，过程是无比艰辛的，但其实最终起到作用的的步骤，也就十来分钟的流程。借此文记录一下主要的流程，供自己未来参考，以及对看到此文的你有所帮助。
+
+1
+2
+3
+配置如下：
+1. MacBook pro 2016
+2. Mac OS Catalina 10.15 Beta 版
+
+
+素材准备
+Github主页-The world’s leading software development...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by kylis on August 4, 2019
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+
+    		</div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                            
+                                <a href="/tags/#技术学习" title="技术学习" rel="2">
+                                    技术学习
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#产品分析" title="产品分析" rel="2">
+                                    产品分析
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                            <img src="/img/autherimg.png" />
+                        
+                        
+                            <p> 💡当即一吹<br/> 💎专业社区灌水，是个产品<br/> 👉周五晚上9:00在打星际2 </p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/kylisss">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </section>
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="https://36kr.com">36氪</a></li>
+                    
+                        <li><a href="https://isux.tencent.com">ISUX</a></li>
+                    
+                        <li><a href="https://sspai.com">少数派</a></li>
+                    
+                        <li><a href="https://www.qimai.cn">七麦数据</a></li>
+                    
+                </ul>
+                
+    		</div>
+        
 	</div>
-
-	<div class="wrap">
-
-		<h1>A sleek, modern Jekyll theme
-		for personal websites</h1>
-		<p>Personal is the perfect theme for developers, designers and other creatives.</p>
-
-		<ul class="socials">
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</ul>
-
-	</div>
-
-</section>
-
-<section class="listing">
-
-	<div class="wrap">
-
-		
-
-		<article class="post">
-
-			<div class="post__image-wrap">
-				<div class="post__image" style="background-image: url(/images/demo/demo-square.jpg)"></div>
-			</div>
-
-			<div class="post__content-wrap">
-				<div class="post__content">
-					<h2 class="post__title"><a href="/project/demo-project">Demo Project</a></h2>
-					<p class="post__subtitle">This is a demo</p>
-					<p class="post__description">This page is a demo that shows everything you can do inside portfolio and blog posts.</p>
-				</div>
-			</div>
-
-		</article>
-
-		
-
-	</div>
-
-</section>
-
-		</div>
-
-	</div>
+</div>
 
 
-	<footer class="footer">
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
 
-	<div class="wrap">
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
 
-		<p class="footer__text">A sleek, modern Jekyll theme for personal websites.</p>
 
-		<div class="footer__copyright">
-			<span>© 2020 Personal</span>
-			<a href="https://jekyllthemes.io" target="_blank">Jekyll Themes</a>
-		</div>
-
-		<ul class="socials">
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</ul>
-
-	</div>
-
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/kylisss">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; INIX 2019
+                    <br>
+                    Power by <a href="https://kylis.cn">kylis | kylis@qq.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
 </footer>
 
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
 
-	<!-- Javascript Assets -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="/js/plugins-min.js"></script>
-	<script src="/js/personal-min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
 
-	
-	<!-- Extra Footer JS Code -->
-	
-	
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
 
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-122473135-2';
+    var _gaDomain = 'kylis.cn';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>
 

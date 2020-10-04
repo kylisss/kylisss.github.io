@@ -1,52 +1,42 @@
 ---
-layout: default
-title: A sleek, modern Jekyll theme for personal websites.
-description: A sleek, modern Jekyll theme for personal websites. Personal is the perfect theme for developers, designers and other creatives.
-featured_image: /images/demo/home.jpg
+layout: page
+description: "Kylis’s Blog"
 ---
 
-<section class="hero">
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:200 }}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
 
-	<div class="hero__image" style="background-image: url({{ page.featured_image | relative_url }})">
-		<div class="hero__overlay"></div>
-	</div>
-
-	<div class="wrap">
-
-		<h1>A sleek, modern Jekyll theme
-		for personal websites</h1>
-		<p>Personal is the perfect theme for developers, designers and other creatives.</p>
-
-		{% include socials.html %}
-
-	</div>
-
-</section>
-
-<section class="listing">
-
-	<div class="wrap">
-
-		{% for project in site.projects reversed %}
-
-		<article class="post">
-
-			<div class="post__image-wrap">
-				<div class="post__image" style="background-image: url({{ project.featured_image | relative_url }})"></div>
-			</div>
-
-			<div class="post__content-wrap">
-				<div class="post__content">
-					<h2 class="post__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
-					<p class="post__subtitle">{{ project.subtitle }}</p>
-					<p class="post__description">{{ project.description }}</p>
-				</div>
-			</div>
-
-		</article>
-
-		{% endfor %}
-
-	</div>
-
-</section>
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

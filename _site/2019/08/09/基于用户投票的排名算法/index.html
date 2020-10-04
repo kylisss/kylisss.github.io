@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="我是kylis，一个正在路上的PM">
+    <meta name="keyword"  content="kylis, 产品, Blog">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>基于用户投票的排名算法 - kylis's Blog</title>
+
+    <link rel="canonical" href="http://localhost:4000/2019/08/09/%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7%E6%8A%95%E7%A5%A8%E7%9A%84%E6%8E%92%E5%90%8D%E7%AE%97%E6%B3%95/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">INIX</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/home-bg.jpg')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#技术学习" title="技术学习">技术学习</a>
+                        
+                    </div>
+                    <h1>基于用户投票的排名算法</h1>
+                    
+                    
+                    <h2 class="subheading">排名算法的粗略介绍</h2>
+                    
+                    <span class="meta">Posted by kylis on August 9, 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h3 id="时段增量算法">时段增量算法：</h3>
+<p>一段时间内的某一动作增量（点赞等）的排名</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>+部署简单，榜单内容更新快
+-不平滑，前小时top内容可能在下一小时沉底
+-缺乏旧内容淘汰机制，旧内容长期霸榜
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="单向动作点赞时间重力">单向动作（点赞）+时间重力：</h3>
+<p>点赞量与内容发布时间长短，进行计算并排名</p>
+
+<p><code class="highlighter-rouge">+对旧内容有下沉处理，保证新优质内容的稳定露出</code></p>
+
+<p><img src="https://user-images.githubusercontent.com/53331888/62768258-0ebd7180-bac9-11e9-9f41-6cb330d42a20.png" alt="image" /></p>
+
+<p>P=内容得赞数；-1=忽略发帖人自己；T=发帖时间；+2=内容转载到自己网站平均需要2小时；G=时间重力因子</p>
+
+<p><img src="https://user-images.githubusercontent.com/53331888/62768329-344a7b00-bac9-11e9-9f00-863f642e5952.png" alt="image" /></p>
+
+<p>G时间重力因子是决定内容排名随时间下降的曲线速度；G越大，排行榜更新越快；所以根据上榜内容产出速度决定（分母时间是个指数形式，默认g=1.8，那么过15个小时左右 score就会大幅度降下来）</p>
+
+<h3 id="双向动作点赞反对时间因素">双向动作（点赞/反对）+时间因素：</h3>
+<p>点赞反对双向动作与内容发布时间互相影响排名</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>+考虑了双向动作，超级受欢迎内容排名靠前
+-有争议内容无法靠前
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/53331888/62768474-7ffd2480-bac9-11e9-89a2-59c4a49f729a.png" alt="image" /></p>
+
+<p>x=赞成-反对；y=-1/0/1（x 大于/等于/小于 0）；z=x的绝对值（x=0时，z=1）；t=发帖时间-社区建成时间；45000=12.5小时（由内容更新速度决定）</p>
+
+<p>前半部分公式：z越大，得分越高；但有了大量赞后，后续赞对排名得分影响越低，而反向动作（踩）会有更大效用</p>
+
+<p><img src="https://user-images.githubusercontent.com/53331888/62768494-868b9c00-bac9-11e9-827d-38736c29b0b7.png" alt="image" /></p>
+
+<p>后半部分公式：t越大，内容越新，后一天的内容得分会高2分（也就是说，前一天的内容相比后一天内容高，则净赞成要增加100倍）；y负责加减分</p>
+
+<h3 id="热门话题算法话题参与度下属内容质量时间">热门话题算法（话题参与度、下属内容质量、时间）：</h3>
+<p>类似知乎问题热度榜单，问题+回答/内容+评论，父子内容的父内容排名，以此找出某段时间内的热点问题</p>
+
+<p><img src="https://user-images.githubusercontent.com/53331888/62768522-9905d580-bac9-11e9-8d15-28046a5af8bf.png" alt="image" /></p>
+
+<p>问题浏览次数越多，越受关注，得分越高；log：当访问量越来越大，后续增量对总分的影响就越来越小
+问题得分越高，排名越高；Qanwser=问题的回答数量，不管问题得分多高，只要回答少于“5”（平均回答数），则大幅下降分数
+全部回答总分
+Qage（距离问题发表的时间）Qupdated（距离最后一个回答的时间），两项时间越长，时效越小，最后分数越低
+<img src="https://user-images.githubusercontent.com/53331888/62768556-aae77880-bac9-11e9-9c1b-fcda8085e688.png" alt="image" /></p>
+
+<h3 id="牛顿冷却定律算法">牛顿冷却定律算法：</h3>
+<p>热文在榜单上的升降，本质是内容的热度在随时间自然冷却；沿用物理热度冷却算法</p>
+
+<p><img src="https://user-images.githubusercontent.com/53331888/62768580-b9ce2b00-bac9-11e9-9a4a-9811d2109545.png" alt="image" /></p>
+
+<p>T（t）=温度随时间冷却的函数；H=室温（普通内容的温度）；常数α=室温与降温速率的比例关系</p>
+
+<p><img src="https://user-images.githubusercontent.com/53331888/62768594-c18dcf80-bac9-11e9-8aa0-09c8d40ef65e.png" alt="image" /></p>
+
+<p>本期得分 = 上一期得分 x exp(-(冷却系数) x 间隔的小时数)</p>
+
+<p>冷却系数由社区内容更新速度决定（假定一篇新文章的初始分数是100分，24小时之后”冷却”为1分，那么可以计算得到”冷却系数”约等于0.192）</p>
+
+<h3 id="威尔逊区间概率算全时段的排名算法">威尔逊区间概率算（全时段的排名算法）：</h3>
+<p>如“全站最受用户好评的内容”</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>+可以修正小样本数据下的置信度
+-得票少的新内容难以露出
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>二项分布，在某一置信度下，计算内容的好评率，及其置信区间，根据置信区间的下限值，进行排名。这个值越大，排名就越高。</p>
+
+<h3 id="贝叶斯平均推导全时段的排名算法">贝叶斯平均推导（全时段的排名算法）：</h3>
+<p>不知道新内容的质量，则先假定其有平均水平，依靠后续情报进行修正其得分。
+如B站，在此基础上加入了时间限制</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>+让新优质内容有机会露出
+-只针对正态分布有效；对于5人高赞，1人负面&amp;3人中评的内容，后者更高排名
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/53331888/62768632-d79b9000-bac9-11e9-8cdb-6854353b2b62.png" alt="image" /></p>
+
+<p>v=真实投票数，m=全站平均投票数，R为现在的平均得分，假设一开始每个作品均有平均水平，随投票人数增加，最终得分越贴近真实值。
+C为全站平均得分，低样本下，作品初始分数即为平均分数</p>
+
+
+
+                <hr>
+
+                
+
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/08/09/%E4%BB%A5%E5%8D%B3%E5%88%BBapp%E4%B8%BA%E4%BE%8B-%E7%A4%BE%E4%BA%A4%E7%A4%BE%E5%8C%BA%E4%BA%A7%E5%93%81%E8%A1%8C%E4%B8%9A%E5%88%86%E6%9E%90/" data-toggle="tooltip" data-placement="top" title="以即刻app为例，社交社区产品行业分析">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/08/18/%E4%BB%A5%E5%85%B4%E8%B6%A3%E5%B0%8F%E7%BB%84%E5%81%9A%E7%A4%BE%E4%BA%A4-%E9%A3%9E%E8%81%8A%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/" data-toggle="tooltip" data-placement="top" title="以兴趣小组做社交，飞聊产品分析">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+
+                
+
+                
+
+            </div>
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags/#技术学习" title="技术学习" rel="2">
+                                    技术学习
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#产品分析" title="产品分析" rel="2">
+                                    产品分析
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="https://36kr.com">36氪</a></li>
+                    
+                        <li><a href="https://isux.tencent.com">ISUX</a></li>
+                    
+                        <li><a href="https://sspai.com">少数派</a></li>
+                    
+                        <li><a href="https://www.qimai.cn">七麦数据</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/kylisss">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; INIX 2019
+                    <br>
+                    Power by <a href="https://kylis.cn">kylis | kylis@qq.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-122473135-2';
+    var _gaDomain = 'kylis.cn';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

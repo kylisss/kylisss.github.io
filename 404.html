@@ -1,23 +1,25 @@
 ---
 layout: default
-title: Page Not Found
-description: Sorry – the page your looking for doesn't exist.
-featured_image: /images/demo/about.jpg
+description: "你来到了没有知识的荒原 :("
+header-img: "img/404-bg.jpg"
+permalink: /404.html
 ---
 
-<section class="hero">
 
-	<div class="hero__image" style="background-image: url({{ page.featured_image }})">
-		<div class="hero__overlay"></div>
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="site-heading" id="tag-heading">
+					<h1>404</h1>
+					<span class="subheading">{{ page.description }}</span>
+				</div>
+			</div>
+		</div>
 	</div>
+</header>
 
-	<div class="wrap">
-
-		<h1>Page not found.</h1>
-		<p class="hero__text editable">Sorry – the page your looking for doesn't exist.</p>
-		<p class="hero__text editable">Perhaps you typed the URL incorrectly, or it may have moved.</p>
-		<p><a href="/" class="button button--large">Back To Home</a></p>
-
-	</div>
-
-</section>
+<script>
+	document.body.classList.add('page-fullscreen');
+</script>

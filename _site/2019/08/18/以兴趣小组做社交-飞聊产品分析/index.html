@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="我是kylis，一个正在路上的PM">
+    <meta name="keyword"  content="kylis, 产品, Blog">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>以兴趣小组做社交，飞聊产品分析 - kylis's Blog</title>
+
+    <link rel="canonical" href="http://localhost:4000/2019/08/18/%E4%BB%A5%E5%85%B4%E8%B6%A3%E5%B0%8F%E7%BB%84%E5%81%9A%E7%A4%BE%E4%BA%A4-%E9%A3%9E%E8%81%8A%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">INIX</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/home-bg.jpg')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#产品分析" title="产品分析">产品分析</a>
+                        
+                    </div>
+                    <h1>以兴趣小组做社交，飞聊产品分析</h1>
+                    
+                    
+                    <h2 class="subheading">框架虽好，实现不易</h2>
+                    
+                    <span class="meta">Posted by kylis on August 18, 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h1 id="背景">背景</h1>
+<h3 id="行业市场背景">行业市场背景</h3>
+<p>2018-2019年，移动社交领域热点频频。多闪、聊天宝、飞聊前仆后继，短视频产品逐渐社区化。即时聊天领域QQ、微信地位难以撼动；伴随5g资费下降以及短视频的成熟，微信关系链复杂导致的社交压力，新的社交机会孕育，各家都在寻求机会弯道超车，占领社区社交产品高地。
+其中以兴趣社区切入社交是一个有潜力的突破点。</p>
+
+<h3 id="产品背景">产品背景</h3>
+<ul>
+  <li>产品介绍
+    <ul>
+      <li>产品定位：兴趣社交</li>
+      <li>slogan：让兴趣相遇</li>
+      <li>产品阶段：探索期，寻找产品竞争切入点</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img width="1100" alt="0" src="https://user-images.githubusercontent.com/53331888/63219167-d12ea780-c19e-11e9-9d21-3d298f84448b.png" /></p>
+
+<ul>
+  <li>排名与下载情况：社交榜211名，下载峰值停留在第一版本上线期间，之后再无增长，原因是上线引流后留存低，选择先优化产品逻辑，再导流。</li>
+  <li>产品发展历程
+    <ul>
+      <li>探索期：2019年5月19日，正式版本上线，主推IM+兴趣社区+个人动态的结合形式。</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="用户">用户</h1>
+<ul>
+  <li>用户人群：
+    <ul>
+      <li>90后，以学生为主。有表达欲和社交欲，对某一兴趣领域有自己的爱好，愿意创作/消费相关内容。</li>
+    </ul>
+  </li>
+  <li>应用场景：
+    <ul>
+      <li>IM通讯：随时</li>
+      <li>兴趣群组社区：空闲碎屏时间刷内容；有内容表达时发内容</li>
+    </ul>
+  </li>
+  <li>核心价值：
+    <ul>
+      <li>提供IM功能</li>
+      <li>满足用户内容消费、表达欲</li>
+      <li>聚拢同兴趣用户，满足弱联系到强联系的不同沟通需求</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="产品">产品</h1>
+<h3 id="产品结构">产品结构</h3>
+<p><img src="https://user-images.githubusercontent.com/53331888/63219175-ec011c00-c19e-11e9-9aa4-9470c4749190.png" alt="0-1" /></p>
+
+<h3 id="用户行为链路">用户行为链路</h3>
+<p><img src="https://user-images.githubusercontent.com/53331888/63219183-00ddaf80-c19f-11e9-905c-fbef9c161c62.png" alt="0-2" /></p>
+
+<h4 id="重点环节">重点环节：</h4>
+
+<ul>
+  <li>新用户留存：消费内容、加入小组</li>
+  <li>老用户促活：消息反馈、加好友/私信</li>
+</ul>
+
+<p><strong>对于新用户而言，</strong> 初入飞聊，现阶段必定不会有足够足够关系链好以聊天。所以主要的消费场景在于小组首页内容流，故保证推荐给新用户的小组主题、内容满足其兴趣需求，并自然完成对小组的关注，对于其初期留存是重中之重。</p>
+
+<p><strong>对于老用户而言，</strong> 能留在飞聊，前提是小组内容流已满足其消费需求，故前面留存环节不是重点。老用户的流失，更多的来自于产品的可替代性，如竞品也可提供类似内容。所以为了防止老用户流失，促活极其重要。促活场景主要有二，小组社区场景活跃互动/发帖，保持对飞聊好友的聊天活跃。前者可保证占据内容消费的时长，减少去竞品的时间；后者可沉淀关系链，提高用户迁移成本。</p>
+
+<h3 id="核心链路">核心链路：</h3>
+<p>以小组内容聚用户，以动态交好友（有足够优质的小组内容，用户动态渗透率高质量佳，其余链路体验好）</p>
+
+<h3 id="迭代分析">迭代分析：</h3>
+<p>探索期：目前主要发力点应是产品配合放大运营。</p>
+
+<h1 id="运营">运营</h1>
+<p>产品上线初期导流，生态未能留存用户。现有运营手段以内容运营每日生产为主，不做展开分析。主要根据自己对运营手段的认知，分析飞聊可做的方向：自上而下的建设圈子生态，先吸引核心用户，再用户下沉导流。</p>
+
+<h3 id="内容侧小组侧">内容侧（小组侧）：</h3>
+<p><img width="684" alt="image" src="https://user-images.githubusercontent.com/53331888/63219214-82cdd880-c19f-11e9-9c48-d0bedc7d94b8.png" /></p>
+
+<p><strong>基础内容消费保障：</strong> 借助平台优势，建设“抖音有啥好看的”，“皮友真有趣”等平台优势资源小组，自动分发高评高赞内容。做到在飞聊每日都有内容看。（存在与司内产品抢用户的问题，需要继续推敲）</p>
+
+<p><strong>建设独特高活跃小组：</strong> 根据已有数据，筛选高活高互动小组，选择运营空间较大的部分，官方运营介入强整合，包括不限于小号做内容、做评论互动氛围、造梗、主动加好友私聊，营造组内成员互加好友，爱互动的氛围</p>
+
+<p><strong>产品配合运营，扩大优质小组内容与氛围的辐射：</strong>
+增加未加入小组的内容分发渠道，如“飞聊头条”通知/公共主页等，将优质内容辐射到未关注用户。
+先运营起来的小组，重点运营打造破圈层的梗文化。把梗文化分发到其余适合的小组中，运营/核心用户炒热氛围。</p>
+
+<p><strong>鼓励用户自运营：</strong> 在前期运营后，积累一批优质高互动小组、核心用户；引导核心用户建立/维护一个个人兴趣小组，予以资源扶持，规模化提升飞聊内小组质量。</p>
+
+<h3 id="社交侧聊天侧">社交侧（聊天侧）：</h3>
+<p><img width="653" alt="image" src="https://user-images.githubusercontent.com/53331888/63219235-f8d23f80-c19f-11e9-9bd8-1d4af4a26af1.png" /></p>
+
+<ul>
+  <li>提供聊天场景
+    <ul>
+      <li>先群聊，后私信：如组队开黑、连麦；</li>
+      <li>直接私信：如搭讪、请教提问；</li>
+    </ul>
+  </li>
+  <li>提供聊天人选
+    <ul>
+      <li>刺激用户在小组内点入某人主页：帖子的个人头像外显框，提示主页有动态更新</li>
+      <li>提升用户主页动态发表、质量；对于低好友数的用户动态分发、互动反馈亟待优化</li>
+    </ul>
+  </li>
+  <li>强化首次聊天/加好友的入口</li>
+  <li>丰富交流功能：分享优质飞聊帖子等，增加可发送内容的选择</li>
+  <li>降低聊天门槛：快速打招呼；帮助用户在聊天前混脸熟，如主页足迹、点赞，动态点赞等，以此减轻破冰压力</li>
+  <li>优化加好友体验：显示好友添加来源、一键加备注“xxx by某小组”</li>
+  <li>降低回复门槛：提供多样化的互动回应方式，如图片可点赞</li>
+</ul>
+
+<h1 id="未来思考">未来思考</h1>
+<h3 id="近期重点">近期重点</h3>
+
+<ul>
+  <li>加强内容建设，打造几支高活优质小组</li>
+  <li>提升个人动态发表率，优化低好友数用户的动态分发、互动反馈。可考虑打通动态与小组帖子的界限，使个人动态也可同步到相关小组内，共他人消费</li>
+</ul>
+
+<h3 id="未来重点">未来重点</h3>
+
+<ul>
+  <li>保证用户自创小组的活跃度；同质小组的整合，以防同好分布不集中带来的较差体验</li>
+  <li>如何有效刺激用户发起私聊、加好友，以及对应的回复、同意</li>
+  <li>较长时间不私聊的好友关系链激活</li>
+</ul>
+
+<h3 id="可落地优化点">可落地优化点</h3>
+
+<ul>
+  <li>新用户引导加入小组
+    <ul>
+      <li>问题：新用户被引导进入小组进行互动时需加入该小组，但部分小组需要审核，打断了用户体验，不利于新用户互动与留存。</li>
+      <li>方案：新用户注册当天的小组推荐，只推荐无需审核的优质小组。</li>
+    </ul>
+  </li>
+</ul>
+
+
+                <hr>
+
+                
+
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/08/09/%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7%E6%8A%95%E7%A5%A8%E7%9A%84%E6%8E%92%E5%90%8D%E7%AE%97%E6%B3%95/" data-toggle="tooltip" data-placement="top" title="基于用户投票的排名算法">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/09/02/%E5%BF%83%E6%82%A6%E7%A4%BE%E5%8C%BA-%E7%BB%99%E5%BF%83%E6%82%A6%E4%BF%B1%E4%B9%90%E9%83%A8%E5%81%9A%E4%B8%AAUGC%E7%A4%BE%E5%8C%BA/" data-toggle="tooltip" data-placement="top" title="心悦社区，给心悦俱乐部做个UGC社区">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+
+                
+
+                
+
+            </div>
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags/#技术学习" title="技术学习" rel="2">
+                                    技术学习
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#产品分析" title="产品分析" rel="2">
+                                    产品分析
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="https://36kr.com">36氪</a></li>
+                    
+                        <li><a href="https://isux.tencent.com">ISUX</a></li>
+                    
+                        <li><a href="https://sspai.com">少数派</a></li>
+                    
+                        <li><a href="https://www.qimai.cn">七麦数据</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/kylisss">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; INIX 2019
+                    <br>
+                    Power by <a href="https://kylis.cn">kylis | kylis@qq.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-122473135-2';
+    var _gaDomain = 'kylis.cn';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

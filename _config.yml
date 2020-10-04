@@ -1,57 +1,130 @@
-site: William A McDowell II
+# Site settings
+title: INIX
+SEOTitle: Kylis's Blog
+header-img: img/home-bg.jpg
+email: kylis@qq.com
+description: "我是Kylis，一个正在路上的PM"
+keyword: "kylis, 产品, Blog"
+url: "https://kylis.cn"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-url: "http://wamcdowell.com"
-baseurl: ""
+# Publish posts or collection documents with a future date.
+future: true
 
-collections:
-  pages:
-    output: true
-    permalink: /:name
-  posts:
-    output: true
-    permalink: /blog/:slug
-  projects:
-    output: true
-    permalink: /project/:slug
+# SNS settings
+RSS: false
+weibo_username:     
+zhihu_username:     msws
+github_username:    kylisss
+twitter_username:   
+#facebook_username:  huxpro
+#linkedin_username:  firstname-lastname-idxxxx
 
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
 
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN  
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
-
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  
-sass:
-  style: compressed
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
 
-paginate: 6
-paginate_path: "/blog/page:num/"
-  
+
+# Disqus settings
+#disqus_username: 
+
+# Netease settings
+#netease_comment: false
+
+# Gitalk settings
+comment_gitalk_clientId: 7cab2c1f2d45924cbfb5
+comment_gitalk_clientSecret: b147b59a7072e751d02cefd21ad41e5142cd235a
+comment_gitalk_repo: kylisss.github.io
+github_username: kylisss
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: 675f7eecd1f618ffd90d25b92bf3c187
+
+# Google Analytics
+#ga_track_id: 'UA-122473135-2'            # Format: UA-xxxxxx-xx
+#ga_domain: https://kylis.cn
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "  
+  💡当即一吹<br/>
+  💎专业社区灌水，是个产品<br/>
+  👉周五晚上9:00在打星际2
+  "
+sidebar-avatar: /img/autherimg.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+
+
+# Friends
+#friends: [
+    #{
+    #     title: "Su",
+    #     href: "http://su.gallery/"
+    # },{
+    # 按上面三行的格式，插入一个友链，显示在sidebar中
+    #    title: "36氪",
+    #    href: "https://36kr.com"
+    #},{
+    #    title: "ISUX",
+    #    href: "https://isux.tencent.com"
+    #},{
+    #    title: "少数派",
+    #    href: "https://sspai.com"
+    #},{
+    #    title: "七麦数据",
+    #    href: "https://www.qimai.cn"
+    #}
+#]

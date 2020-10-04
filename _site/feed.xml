@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>INIX</title>
+    <description>我是kylis，一个正在路上的PM</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 07 Sep 2019 10:53:54 +0800</pubDate>
+    <lastBuildDate>Sat, 07 Sep 2019 10:53:54 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>一个活跃社群怎么炼成|社群运营框架</title>
+        <description>&lt;h2 id=&quot;共同价值观&quot;&gt;共同价值观&lt;/h2&gt;
+
+&lt;p&gt;Slogan ：一句话概括社群的目的作用&lt;/p&gt;
+
+&lt;h2 id=&quot;共同目标&quot;&gt;共同目标&lt;/h2&gt;
+
+&lt;p&gt;大目标：一个社群必须要有的共同方向，社群的存在意义&lt;/p&gt;
+
+&lt;p&gt;小目标：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;每天……&lt;/li&gt;
+  &lt;li&gt;每周……&lt;/li&gt;
+  &lt;li&gt;每月……&lt;/li&gt;
+  &lt;li&gt;每人……&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;（把社群的大目标进行拆解，变成可以轻松落地执行的事项）&lt;/p&gt;
+
+&lt;h2 id=&quot;行为规范&quot;&gt;行为规范&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;每周至少参与一次社群发言&lt;/li&gt;
+  &lt;li&gt;……&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;（对社群成员进行规范，一定程度提高社群准入，也是对沉默成员有一个及时的唤醒或劝退，保证社群整体的活跃性）&lt;/p&gt;
+
+&lt;h2 id=&quot;组织结构&quot;&gt;组织结构&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;运营方：规划管理维护，日常交流中淡化身份&lt;/li&gt;
+  &lt;li&gt;KOL：各话题中的明星用户，群内出现即受到热捧&lt;/li&gt;
+  &lt;li&gt;普通用户：点赞，回复，水群&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;内部链接&quot;&gt;内部链接&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;官方-用户：布置每周话题、活动；社群福利的发放……&lt;/li&gt;
+  &lt;li&gt;KOL-用户：发布明星回复，把握讨论方向&lt;/li&gt;
+  &lt;li&gt;用户-KOL：反向鼓励KOL输出&lt;/li&gt;
+  &lt;li&gt;用户-用户：互相促活&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;榜样力量&quot;&gt;榜样力量&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;KOL必须为群成员所熟知，打成一片；否则KOL发的文章就是和转载别的平台文章没有区别，对用户来讲没有温度&lt;/li&gt;
+  &lt;li&gt;KOL树立路径：官方人员先自己成为KOL；鼓励潜力用户（群内活跃，热爱游戏）发文；官方群内可视化扶持至被用户接受&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;稳定输出系列化&quot;&gt;稳定输出（系列化）&lt;/h2&gt;
+
+&lt;p&gt;一个社群需要有稳定的输出、活跃，才能保持共同目标的推进，社群的良心发展。
+比如：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;官方：&lt;/li&gt;
+  &lt;li&gt;每周3个话题&lt;/li&gt;
+  &lt;li&gt;每周1个福利活动&lt;/li&gt;
+  &lt;li&gt;KOL：&lt;/li&gt;
+  &lt;li&gt;每个群5-10人&lt;/li&gt;
+  &lt;li&gt;参加每次话题讨论，并扶持为热门回复（话题发出1小时内）&lt;/li&gt;
+  &lt;li&gt;每周输出一篇游戏推荐文章（周六输出、推广）&lt;/li&gt;
+  &lt;li&gt;普通用户：&lt;/li&gt;
+  &lt;li&gt;每周至少参与一次话题讨论（超过两次未达标，需给出游戏“100字以上短评”方可复入群）&lt;/li&gt;
+  &lt;li&gt;每月至少参与一次福利活动（超过两次未达标，需给出“300字以上长图文”方可复入群）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;具体措施&quot;&gt;具体措施&lt;/h2&gt;
+
+&lt;p&gt;大致分析结束，需要有一些具体可以的落地措施：&lt;/p&gt;
+
+&lt;p&gt;比如一个手游社群：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;继续保持游戏早报， 但其内容应该更贴合手游方面&lt;/li&gt;
+  &lt;li&gt;每周策划运营100元预算周活动，每周二上线；每周日给出活动规划，审核检查&lt;/li&gt;
+  &lt;li&gt;每周日二四规划发布明日话题，每期话题抽选3名同学，奖励10元&lt;/li&gt;
+  &lt;li&gt;次周日收集活动、话题中奖名单；每月初提交本月中奖名单&lt;/li&gt;
+  &lt;li&gt;群条例执行：建立表单跟踪记录参与情况&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;条例：
+ 1.每周至少参与一次话题讨论
+ 2.每月至少参与一次福利活动
+惩罚措施：
+ 1.话题未达标：超过两次未达标，需给出游戏“100字以上短评”方可复入群
+ 2.活动未达标：超过两次未达标，需给出“300字以上长图文”方可复入群
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 02 Sep 2019 17:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/09/02/%E4%B8%80%E4%B8%AA%E6%B4%BB%E8%B7%83%E7%A4%BE%E7%BE%A4%E6%80%8E%E4%B9%88%E7%82%BC%E6%88%90-%E7%A4%BE%E7%BE%A4%E8%BF%90%E8%90%A5%E6%A1%86%E6%9E%B6/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/09/02/%E4%B8%80%E4%B8%AA%E6%B4%BB%E8%B7%83%E7%A4%BE%E7%BE%A4%E6%80%8E%E4%B9%88%E7%82%BC%E6%88%90-%E7%A4%BE%E7%BE%A4%E8%BF%90%E8%90%A5%E6%A1%86%E6%9E%B6/</guid>
+        
+        <category>运营心得</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>心悦社区，给心悦俱乐部做个UGC社区</title>
+        <description>&lt;h1 id=&quot;背景分析&quot;&gt;背景分析&lt;/h1&gt;
+&lt;h3 id=&quot;why-动机&quot;&gt;why 动机&lt;/h3&gt;
+&lt;p&gt;促活留存心悦会员，使其持续在腾讯游戏内充值&lt;/p&gt;
+
+&lt;h3 id=&quot;where-竞品现状举例&quot;&gt;where 竞品现状（举例）&lt;/h3&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;优质PGC：内容有了解价值（文章点赞率）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;优质UGC：能激起有可读性的评论互动（评论率、评论点赞率）&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;腾讯内部&lt;/th&gt;
+      &lt;th&gt;单游戏社区&lt;/th&gt;
+      &lt;th&gt;王者营地&lt;/th&gt;
+      &lt;th&gt;PGC为主，也有较好UGC氛围&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;综合性社区&lt;/td&gt;
+      &lt;td&gt;QQ兴趣部落-游戏&lt;/td&gt;
+      &lt;td&gt;UGC为主，内容价值较低&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;全行业&lt;/td&gt;
+      &lt;td&gt;单游戏社区&lt;/td&gt;
+      &lt;td&gt;我的世界内置论坛&lt;/td&gt;
+      &lt;td&gt;PGC、官方活动帖为主&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;综合性社区&lt;/td&gt;
+      &lt;td&gt;Taptap&lt;/td&gt;
+      &lt;td&gt;UGC为主，有优质PUGC沉淀&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;百度贴吧-游戏&lt;/td&gt;
+      &lt;td&gt;UGC为主，有优质PUGC沉淀&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;网易大神&lt;/td&gt;
+      &lt;td&gt;网易游戏，PGC为主，有一定UGC&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;其他相关产品&lt;/td&gt;
+      &lt;td&gt;资讯流产品&lt;/td&gt;
+      &lt;td&gt;今日头条-游戏&lt;/td&gt;
+      &lt;td&gt;PGC，内容质量和运营者有关，较不专业&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;when-时机&quot;&gt;when 时机&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;暂无专为大R玩家打造的社区&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;腾讯内部暂无优质UGC综合性游戏社区&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;全行业来看，百度贴吧、Taptap是目前较好的UGC社区，互动较多，但可玩的互动活动较少&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;who-心悦来做社区的优势&quot;&gt;who 心悦来做社区的优势&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;掌握大R玩家，黏性高，用户价值高&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;和腾讯游戏工作室有密切合作，资源多&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;what-做什么&quot;&gt;what 做什么&lt;/h3&gt;
+&lt;p&gt;UGC互动社区&lt;/p&gt;
+
+&lt;h3 id=&quot;how-怎么打&quot;&gt;how 怎么打&lt;/h3&gt;
+&lt;p&gt;利用优势，做差异化：
+从头部游戏入手，用“玩家互动关系链、社区活动、精品PUGC文章”，打造大R玩家俱乐部，发展“玩家互动+运营活动（线上&amp;amp;线下）”的UGC高互动社区。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;ugc社区建设方案&quot;&gt;UGC社区建设方案&lt;/h1&gt;
+&lt;h2 id=&quot;一方案预览&quot;&gt;一、方案预览&lt;/h2&gt;
+&lt;h3 id=&quot;发展路径规划&quot;&gt;发展路径规划&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027389-61478928-98c3-4b9d-b9aa-8e09c8bf388e.png#align=left&amp;amp;display=inline&amp;amp;height=271&amp;amp;originHeight=593&amp;amp;originWidth=1555&amp;amp;size=0&amp;amp;status=done&amp;amp;width=711&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;前期仅对心悦玩家开放，从少量游戏开始，逐步摸索产品、运营方案，留存促活心悦玩家&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;品牌升级后，社区成为产品主要形态，下沉导入潜力付费玩家、普通玩家，刺激消费氪金&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;功能框架&quot;&gt;功能框架&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027474-f23d8fc5-519d-4366-8266-d2248d488807.png#align=left&amp;amp;display=inline&amp;amp;height=267&amp;amp;originHeight=682&amp;amp;originWidth=1736&amp;amp;size=0&amp;amp;status=done&amp;amp;width=680&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027471-a610aad2-892a-4694-bc18-39a8c90ce15c.png#align=left&amp;amp;display=inline&amp;amp;height=622&amp;amp;originHeight=920&amp;amp;originWidth=1006&amp;amp;size=0&amp;amp;status=done&amp;amp;width=680&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;用户链路行为&quot;&gt;用户链路行为&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027380-b0997237-63db-41d3-8060-793b4aae1f0b.png#align=left&amp;amp;display=inline&amp;amp;height=355&amp;amp;originHeight=508&amp;amp;originWidth=1066&amp;amp;size=0&amp;amp;status=done&amp;amp;width=745&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;*社区为产品主体后，充值/礼包领取为后置位行为，链路更通顺&lt;/p&gt;
+
+&lt;h3 id=&quot;核心数据指标&quot;&gt;核心数据指标&lt;/h3&gt;
+
+&lt;p&gt;重点关注用户对社区的黏性：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;内容相关：&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;UGC内容的评论率、评论点赞率——衡量是否激发优质互动氛围，产出有可读性的评论&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;UGC内容的发表率（日发表人数/日活）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;关系链相关：&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;人均关注用户数&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;UGC内容中，粉丝互动占总互动占比&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;二具体思路举例&quot;&gt;二、具体思路举例&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027388-d09cde6f-77d4-4e03-842e-67c050411478.png#align=left&amp;amp;display=inline&amp;amp;height=427&amp;amp;originHeight=892&amp;amp;originWidth=1420&amp;amp;size=0&amp;amp;status=done&amp;amp;width=680&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;提升社区面板打开率&quot;&gt;提升社区面板打开率&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027375-d68f2bc8-f35c-4eda-88e9-218bf51e732f.png#align=left&amp;amp;display=inline&amp;amp;height=155&amp;amp;originHeight=362&amp;amp;originWidth=1588&amp;amp;size=0&amp;amp;status=done&amp;amp;width=680&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027418-53160f9d-e37f-491a-9d7b-255e29c859e6.png#align=left&amp;amp;display=inline&amp;amp;height=589&amp;amp;originHeight=1584&amp;amp;originWidth=1440&amp;amp;size=0&amp;amp;status=done&amp;amp;width=535&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;提升ugc发表率&quot;&gt;提升UGC发表率&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027410-c9d61681-b6e4-4c66-bcc9-25a7f664af13.png#align=left&amp;amp;display=inline&amp;amp;height=323&amp;amp;originHeight=724&amp;amp;originWidth=1522&amp;amp;size=0&amp;amp;status=done&amp;amp;width=680&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;提升评论发表率&quot;&gt;提升评论发表率&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027400-feda8fc7-5c3c-4345-912e-d99d50aa4df7.png#align=left&amp;amp;display=inline&amp;amp;height=372&amp;amp;originHeight=954&amp;amp;originWidth=1746&amp;amp;size=0&amp;amp;status=done&amp;amp;width=680&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;简历玩家间关系链&quot;&gt;简历玩家间关系链&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027404-7538c5d8-dfc9-47fa-a041-4bd97b282573.png#align=left&amp;amp;display=inline&amp;amp;height=214&amp;amp;originHeight=552&amp;amp;originWidth=1756&amp;amp;size=0&amp;amp;status=done&amp;amp;width=680&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027402-64da94fc-596f-40dc-9021-45e20aa74697.png#align=left&amp;amp;display=inline&amp;amp;height=625&amp;amp;originHeight=1182&amp;amp;originWidth=1286&amp;amp;size=0&amp;amp;status=done&amp;amp;width=680&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ps官方活动&quot;&gt;PS：官方活动&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;由于用户价值高，故可投入较大人力、预算开展活动，促进社区心悦玩家建立关系链&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;线上水友赛活动：利用渠道优势，申请活动奖励，开展水友组队赛&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;线下同城聚会活动&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;鼓励活动二创：在活动结束后，在社区内发表活动实拍记录等UGC内容，感染未参加用户&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Mon, 02 Sep 2019 16:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/09/02/%E5%BF%83%E6%82%A6%E7%A4%BE%E5%8C%BA-%E7%BB%99%E5%BF%83%E6%82%A6%E4%BF%B1%E4%B9%90%E9%83%A8%E5%81%9A%E4%B8%AAUGC%E7%A4%BE%E5%8C%BA/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/09/02/%E5%BF%83%E6%82%A6%E7%A4%BE%E5%8C%BA-%E7%BB%99%E5%BF%83%E6%82%A6%E4%BF%B1%E4%B9%90%E9%83%A8%E5%81%9A%E4%B8%AAUGC%E7%A4%BE%E5%8C%BA/</guid>
+        
+        <category>产品策划</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>以兴趣小组做社交，飞聊产品分析</title>
+        <description>&lt;h1 id=&quot;背景&quot;&gt;背景&lt;/h1&gt;
+&lt;h3 id=&quot;行业市场背景&quot;&gt;行业市场背景&lt;/h3&gt;
+&lt;p&gt;2018-2019年，移动社交领域热点频频。多闪、聊天宝、飞聊前仆后继，短视频产品逐渐社区化。即时聊天领域QQ、微信地位难以撼动；伴随5g资费下降以及短视频的成熟，微信关系链复杂导致的社交压力，新的社交机会孕育，各家都在寻求机会弯道超车，占领社区社交产品高地。
+其中以兴趣社区切入社交是一个有潜力的突破点。&lt;/p&gt;
+
+&lt;h3 id=&quot;产品背景&quot;&gt;产品背景&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;产品介绍
+    &lt;ul&gt;
+      &lt;li&gt;产品定位：兴趣社交&lt;/li&gt;
+      &lt;li&gt;slogan：让兴趣相遇&lt;/li&gt;
+      &lt;li&gt;产品阶段：探索期，寻找产品竞争切入点&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img width=&quot;1100&quot; alt=&quot;0&quot; src=&quot;https://user-images.githubusercontent.com/53331888/63219167-d12ea780-c19e-11e9-9d21-3d298f84448b.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;排名与下载情况：社交榜211名，下载峰值停留在第一版本上线期间，之后再无增长，原因是上线引流后留存低，选择先优化产品逻辑，再导流。&lt;/li&gt;
+  &lt;li&gt;产品发展历程
+    &lt;ul&gt;
+      &lt;li&gt;探索期：2019年5月19日，正式版本上线，主推IM+兴趣社区+个人动态的结合形式。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;用户&quot;&gt;用户&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;用户人群：
+    &lt;ul&gt;
+      &lt;li&gt;90后，以学生为主。有表达欲和社交欲，对某一兴趣领域有自己的爱好，愿意创作/消费相关内容。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;应用场景：
+    &lt;ul&gt;
+      &lt;li&gt;IM通讯：随时&lt;/li&gt;
+      &lt;li&gt;兴趣群组社区：空闲碎屏时间刷内容；有内容表达时发内容&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;核心价值：
+    &lt;ul&gt;
+      &lt;li&gt;提供IM功能&lt;/li&gt;
+      &lt;li&gt;满足用户内容消费、表达欲&lt;/li&gt;
+      &lt;li&gt;聚拢同兴趣用户，满足弱联系到强联系的不同沟通需求&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;产品&quot;&gt;产品&lt;/h1&gt;
+&lt;h3 id=&quot;产品结构&quot;&gt;产品结构&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/53331888/63219175-ec011c00-c19e-11e9-9aa4-9470c4749190.png&quot; alt=&quot;0-1&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;用户行为链路&quot;&gt;用户行为链路&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/53331888/63219183-00ddaf80-c19f-11e9-905c-fbef9c161c62.png&quot; alt=&quot;0-2&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;重点环节&quot;&gt;重点环节：&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新用户留存：消费内容、加入小组&lt;/li&gt;
+  &lt;li&gt;老用户促活：消息反馈、加好友/私信&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;对于新用户而言，&lt;/strong&gt; 初入飞聊，现阶段必定不会有足够足够关系链好以聊天。所以主要的消费场景在于小组首页内容流，故保证推荐给新用户的小组主题、内容满足其兴趣需求，并自然完成对小组的关注，对于其初期留存是重中之重。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;对于老用户而言，&lt;/strong&gt; 能留在飞聊，前提是小组内容流已满足其消费需求，故前面留存环节不是重点。老用户的流失，更多的来自于产品的可替代性，如竞品也可提供类似内容。所以为了防止老用户流失，促活极其重要。促活场景主要有二，小组社区场景活跃互动/发帖，保持对飞聊好友的聊天活跃。前者可保证占据内容消费的时长，减少去竞品的时间；后者可沉淀关系链，提高用户迁移成本。&lt;/p&gt;
+
+&lt;h3 id=&quot;核心链路&quot;&gt;核心链路：&lt;/h3&gt;
+&lt;p&gt;以小组内容聚用户，以动态交好友（有足够优质的小组内容，用户动态渗透率高质量佳，其余链路体验好）&lt;/p&gt;
+
+&lt;h3 id=&quot;迭代分析&quot;&gt;迭代分析：&lt;/h3&gt;
+&lt;p&gt;探索期：目前主要发力点应是产品配合放大运营。&lt;/p&gt;
+
+&lt;h1 id=&quot;运营&quot;&gt;运营&lt;/h1&gt;
+&lt;p&gt;产品上线初期导流，生态未能留存用户。现有运营手段以内容运营每日生产为主，不做展开分析。主要根据自己对运营手段的认知，分析飞聊可做的方向：自上而下的建设圈子生态，先吸引核心用户，再用户下沉导流。&lt;/p&gt;
+
+&lt;h3 id=&quot;内容侧小组侧&quot;&gt;内容侧（小组侧）：&lt;/h3&gt;
+&lt;p&gt;&lt;img width=&quot;684&quot; alt=&quot;image&quot; src=&quot;https://user-images.githubusercontent.com/53331888/63219214-82cdd880-c19f-11e9-9c48-d0bedc7d94b8.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;基础内容消费保障：&lt;/strong&gt; 借助平台优势，建设“抖音有啥好看的”，“皮友真有趣”等平台优势资源小组，自动分发高评高赞内容。做到在飞聊每日都有内容看。（存在与司内产品抢用户的问题，需要继续推敲）&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;建设独特高活跃小组：&lt;/strong&gt; 根据已有数据，筛选高活高互动小组，选择运营空间较大的部分，官方运营介入强整合，包括不限于小号做内容、做评论互动氛围、造梗、主动加好友私聊，营造组内成员互加好友，爱互动的氛围&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;产品配合运营，扩大优质小组内容与氛围的辐射：&lt;/strong&gt;
+增加未加入小组的内容分发渠道，如“飞聊头条”通知/公共主页等，将优质内容辐射到未关注用户。
+先运营起来的小组，重点运营打造破圈层的梗文化。把梗文化分发到其余适合的小组中，运营/核心用户炒热氛围。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;鼓励用户自运营：&lt;/strong&gt; 在前期运营后，积累一批优质高互动小组、核心用户；引导核心用户建立/维护一个个人兴趣小组，予以资源扶持，规模化提升飞聊内小组质量。&lt;/p&gt;
+
+&lt;h3 id=&quot;社交侧聊天侧&quot;&gt;社交侧（聊天侧）：&lt;/h3&gt;
+&lt;p&gt;&lt;img width=&quot;653&quot; alt=&quot;image&quot; src=&quot;https://user-images.githubusercontent.com/53331888/63219235-f8d23f80-c19f-11e9-9bd8-1d4af4a26af1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;提供聊天场景
+    &lt;ul&gt;
+      &lt;li&gt;先群聊，后私信：如组队开黑、连麦；&lt;/li&gt;
+      &lt;li&gt;直接私信：如搭讪、请教提问；&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;提供聊天人选
+    &lt;ul&gt;
+      &lt;li&gt;刺激用户在小组内点入某人主页：帖子的个人头像外显框，提示主页有动态更新&lt;/li&gt;
+      &lt;li&gt;提升用户主页动态发表、质量；对于低好友数的用户动态分发、互动反馈亟待优化&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;强化首次聊天/加好友的入口&lt;/li&gt;
+  &lt;li&gt;丰富交流功能：分享优质飞聊帖子等，增加可发送内容的选择&lt;/li&gt;
+  &lt;li&gt;降低聊天门槛：快速打招呼；帮助用户在聊天前混脸熟，如主页足迹、点赞，动态点赞等，以此减轻破冰压力&lt;/li&gt;
+  &lt;li&gt;优化加好友体验：显示好友添加来源、一键加备注“xxx by某小组”&lt;/li&gt;
+  &lt;li&gt;降低回复门槛：提供多样化的互动回应方式，如图片可点赞&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;未来思考&quot;&gt;未来思考&lt;/h1&gt;
+&lt;h3 id=&quot;近期重点&quot;&gt;近期重点&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;加强内容建设，打造几支高活优质小组&lt;/li&gt;
+  &lt;li&gt;提升个人动态发表率，优化低好友数用户的动态分发、互动反馈。可考虑打通动态与小组帖子的界限，使个人动态也可同步到相关小组内，共他人消费&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;未来重点&quot;&gt;未来重点&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;保证用户自创小组的活跃度；同质小组的整合，以防同好分布不集中带来的较差体验&lt;/li&gt;
+  &lt;li&gt;如何有效刺激用户发起私聊、加好友，以及对应的回复、同意&lt;/li&gt;
+  &lt;li&gt;较长时间不私聊的好友关系链激活&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;可落地优化点&quot;&gt;可落地优化点&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新用户引导加入小组
+    &lt;ul&gt;
+      &lt;li&gt;问题：新用户被引导进入小组进行互动时需加入该小组，但部分小组需要审核，打断了用户体验，不利于新用户互动与留存。&lt;/li&gt;
+      &lt;li&gt;方案：新用户注册当天的小组推荐，只推荐无需审核的优质小组。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 18 Aug 2019 16:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/18/%E4%BB%A5%E5%85%B4%E8%B6%A3%E5%B0%8F%E7%BB%84%E5%81%9A%E7%A4%BE%E4%BA%A4-%E9%A3%9E%E8%81%8A%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/18/%E4%BB%A5%E5%85%B4%E8%B6%A3%E5%B0%8F%E7%BB%84%E5%81%9A%E7%A4%BE%E4%BA%A4-%E9%A3%9E%E8%81%8A%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/</guid>
+        
+        <category>产品分析</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>基于用户投票的排名算法</title>
+        <description>&lt;h3 id=&quot;时段增量算法&quot;&gt;时段增量算法：&lt;/h3&gt;
+&lt;p&gt;一段时间内的某一动作增量（点赞等）的排名&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;+部署简单，榜单内容更新快
+-不平滑，前小时top内容可能在下一小时沉底
+-缺乏旧内容淘汰机制，旧内容长期霸榜
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;单向动作点赞时间重力&quot;&gt;单向动作（点赞）+时间重力：&lt;/h3&gt;
+&lt;p&gt;点赞量与内容发布时间长短，进行计算并排名&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+对旧内容有下沉处理，保证新优质内容的稳定露出&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/53331888/62768258-0ebd7180-bac9-11e9-9f41-6cb330d42a20.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;P=内容得赞数；-1=忽略发帖人自己；T=发帖时间；+2=内容转载到自己网站平均需要2小时；G=时间重力因子&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/53331888/62768329-344a7b00-bac9-11e9-9f00-863f642e5952.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;G时间重力因子是决定内容排名随时间下降的曲线速度；G越大，排行榜更新越快；所以根据上榜内容产出速度决定（分母时间是个指数形式，默认g=1.8，那么过15个小时左右 score就会大幅度降下来）&lt;/p&gt;
+
+&lt;h3 id=&quot;双向动作点赞反对时间因素&quot;&gt;双向动作（点赞/反对）+时间因素：&lt;/h3&gt;
+&lt;p&gt;点赞反对双向动作与内容发布时间互相影响排名&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;+考虑了双向动作，超级受欢迎内容排名靠前
+-有争议内容无法靠前
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/53331888/62768474-7ffd2480-bac9-11e9-89a2-59c4a49f729a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;x=赞成-反对；y=-1/0/1（x 大于/等于/小于 0）；z=x的绝对值（x=0时，z=1）；t=发帖时间-社区建成时间；45000=12.5小时（由内容更新速度决定）&lt;/p&gt;
+
+&lt;p&gt;前半部分公式：z越大，得分越高；但有了大量赞后，后续赞对排名得分影响越低，而反向动作（踩）会有更大效用&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/53331888/62768494-868b9c00-bac9-11e9-827d-38736c29b0b7.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;后半部分公式：t越大，内容越新，后一天的内容得分会高2分（也就是说，前一天的内容相比后一天内容高，则净赞成要增加100倍）；y负责加减分&lt;/p&gt;
+
+&lt;h3 id=&quot;热门话题算法话题参与度下属内容质量时间&quot;&gt;热门话题算法（话题参与度、下属内容质量、时间）：&lt;/h3&gt;
+&lt;p&gt;类似知乎问题热度榜单，问题+回答/内容+评论，父子内容的父内容排名，以此找出某段时间内的热点问题&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/53331888/62768522-9905d580-bac9-11e9-8d15-28046a5af8bf.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;问题浏览次数越多，越受关注，得分越高；log：当访问量越来越大，后续增量对总分的影响就越来越小
+问题得分越高，排名越高；Qanwser=问题的回答数量，不管问题得分多高，只要回答少于“5”（平均回答数），则大幅下降分数
+全部回答总分
+Qage（距离问题发表的时间）Qupdated（距离最后一个回答的时间），两项时间越长，时效越小，最后分数越低
+&lt;img src=&quot;https://user-images.githubusercontent.com/53331888/62768556-aae77880-bac9-11e9-9c1b-fcda8085e688.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;牛顿冷却定律算法&quot;&gt;牛顿冷却定律算法：&lt;/h3&gt;
+&lt;p&gt;热文在榜单上的升降，本质是内容的热度在随时间自然冷却；沿用物理热度冷却算法&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/53331888/62768580-b9ce2b00-bac9-11e9-9a4a-9811d2109545.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;T（t）=温度随时间冷却的函数；H=室温（普通内容的温度）；常数α=室温与降温速率的比例关系&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/53331888/62768594-c18dcf80-bac9-11e9-8aa0-09c8d40ef65e.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本期得分 = 上一期得分 x exp(-(冷却系数) x 间隔的小时数)&lt;/p&gt;
+
+&lt;p&gt;冷却系数由社区内容更新速度决定（假定一篇新文章的初始分数是100分，24小时之后”冷却”为1分，那么可以计算得到”冷却系数”约等于0.192）&lt;/p&gt;
+
+&lt;h3 id=&quot;威尔逊区间概率算全时段的排名算法&quot;&gt;威尔逊区间概率算（全时段的排名算法）：&lt;/h3&gt;
+&lt;p&gt;如“全站最受用户好评的内容”&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;+可以修正小样本数据下的置信度
+-得票少的新内容难以露出
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;二项分布，在某一置信度下，计算内容的好评率，及其置信区间，根据置信区间的下限值，进行排名。这个值越大，排名就越高。&lt;/p&gt;
+
+&lt;h3 id=&quot;贝叶斯平均推导全时段的排名算法&quot;&gt;贝叶斯平均推导（全时段的排名算法）：&lt;/h3&gt;
+&lt;p&gt;不知道新内容的质量，则先假定其有平均水平，依靠后续情报进行修正其得分。
+如B站，在此基础上加入了时间限制&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;+让新优质内容有机会露出
+-只针对正态分布有效；对于5人高赞，1人负面&amp;amp;3人中评的内容，后者更高排名
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/53331888/62768632-d79b9000-bac9-11e9-8cdb-6854353b2b62.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;v=真实投票数，m=全站平均投票数，R为现在的平均得分，假设一开始每个作品均有平均水平，随投票人数增加，最终得分越贴近真实值。
+C为全站平均得分，低样本下，作品初始分数即为平均分数&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 09 Aug 2019 17:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/09/%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7%E6%8A%95%E7%A5%A8%E7%9A%84%E6%8E%92%E5%90%8D%E7%AE%97%E6%B3%95/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/09/%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7%E6%8A%95%E7%A5%A8%E7%9A%84%E6%8E%92%E5%90%8D%E7%AE%97%E6%B3%95/</guid>
+        
+        <category>技术学习</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>以即刻app为例，社交社区产品行业分析</title>
+        <description>&lt;h3 id=&quot;首先定义一下社交与社区的区别&quot;&gt;首先定义一下社交与社区的区别。&lt;/h3&gt;
+&lt;p&gt;我认为社交与社区的区别在于建立联系的载体不同。社交是先交流再内容，因人而建立联系；社区是先内容再交流，因内容而去认识人。
+社交产品的核心资产是关系链，而社区产品是内容。
+另外两者间也有很多其他差别：强关系-弱关系，私密-公开，同步实时-异步，平等交往-头部化。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;社区&lt;/th&gt;
+      &lt;th&gt;社交&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;核心资产&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;内容&lt;/td&gt;
+      &lt;td&gt;关系链&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;关系&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;弱联系&lt;/td&gt;
+      &lt;td&gt;强联系&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;交流&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;公开、异步&lt;/td&gt;
+      &lt;td&gt;私密、同步实时&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;资源&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;头部化&lt;/td&gt;
+      &lt;td&gt;平等双向&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;而社区和社交之间，也有很多不同的产品形态，从联系的弱到强，可以分为以下几类：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;资讯：微博、微信公众号&lt;/li&gt;
+  &lt;li&gt;社区：即刻、B站、抖音、最右&lt;/li&gt;
+  &lt;li&gt;社交：陌陌、脉脉、Soul&lt;/li&gt;
+  &lt;li&gt;即时聊天工具：QQ、微信&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;初次之外，也可按信息沟通双方是否认识，分为陌生人、熟人两大类。&lt;/p&gt;
+
+&lt;h3 id=&quot;以即刻为例子其实可以很容易理解这些类别之间的区别&quot;&gt;以即刻为例子，其实可以很容易理解这些类别之间的区别。&lt;/h3&gt;
+
+&lt;p&gt;即刻的发展路线极为坚定与鲜明：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;资讯订阅期
+    &lt;ul&gt;
+      &lt;li&gt;运营编辑精炼订阅源，提供信息精选——初始优质内容来源，吸引早期用户加入与口碑传播&lt;/li&gt;
+      &lt;li&gt;开放订阅机器人，用户可diy订阅源——内容多样化&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;订阅流社区化
+    &lt;ul&gt;
+      &lt;li&gt;订阅主题圈子化，允许UGC发布到主题中，加入推荐流——培养UGC发布习惯，与评论氛围组合打造年轻人的兴趣社区调性；积累真人生产的内容，为转型社区、社交做准备&lt;/li&gt;
+      &lt;li&gt;推出评论功能，运营带头造热评——引导社区氛围，打造社区热评文化&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;社区社交化
+    &lt;ul&gt;
+      &lt;li&gt;推出关注功能，更新动态流——培养用户间关注行为，保证个性化优质内容稳定获取与圈层隔离&lt;/li&gt;
+      &lt;li&gt;上线最近访客、日记；推荐流转为人维度——强调人的存在感，刺激用户互动；引导用户使用动态流，保证圈层隔离，内容精准；利用日记功能、多tag动态，构建人的立面社交形象，沉淀为半熟人关系链，增加用户黏性&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;其实就是从资讯平台做起，不断下沉，增加评论功能培养用户互动，进而鼓励用户发表UGC，使社区重心转移到“人创作内容”上来，引导用户先因为内容互相关注，形成单向关系链。在一切向好之后，鼓励关注与被关注间产生人与人的直接互动。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 09 Aug 2019 16:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/09/%E4%BB%A5%E5%8D%B3%E5%88%BBapp%E4%B8%BA%E4%BE%8B-%E7%A4%BE%E4%BA%A4%E7%A4%BE%E5%8C%BA%E4%BA%A7%E5%93%81%E8%A1%8C%E4%B8%9A%E5%88%86%E6%9E%90/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/09/%E4%BB%A5%E5%8D%B3%E5%88%BBapp%E4%B8%BA%E4%BE%8B-%E7%A4%BE%E4%BA%A4%E7%A4%BE%E5%8C%BA%E4%BA%A7%E5%93%81%E8%A1%8C%E4%B8%9A%E5%88%86%E6%9E%90/</guid>
+        
+        <category>产品分析</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Github Page + Jekyll，踩了无数个坑后，成功搭建静态博客</title>
+        <description>&lt;p&gt;搭建这个博客，过程是无比艰辛的，但其实最终起到作用的的步骤，也就十来分钟的流程。借此文记录一下主要的流程，供自己未来参考，以及对看到此文的你有所帮助。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;配置如下：
+1. MacBook pro 2016
+2. Mac OS Catalina 10.15 Beta 版
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;素材准备&quot;&gt;素材准备&lt;/h3&gt;
+&lt;p&gt;Github主页-&lt;a href=&quot;https://github.com&quot;&gt;The world’s leading software development platform · GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Jekyll主题市场-&lt;a href=&quot;http://jekyllthemes.org&quot;&gt;Jekyll Themes&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;注册github账号并建立一个repository&quot;&gt;注册Github账号，并建立一个repository&lt;/h3&gt;
+&lt;p&gt;注意，repo的名字格式为 your-github-username.github.io
+&lt;img src=&quot;https://i.loli.net/2019/08/04/MDpAWexLHuVYhCG.png&quot; alt=&quot;42E2FFA3-4F67-44C5-8266-9109293C6AB1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;下载使用github-desktop把该repository克隆到自己电脑上&quot;&gt;下载使用Github Desktop，把该repository克隆到自己电脑上&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/08/04/BHFioc2JkmtV4fj.png&quot; alt=&quot;19519014-9354-47FA-943C-D167201ACE9F.png&quot; /&gt;
+（不用管我的红幅报错）这样你的电脑上应该就有一个空的名为 your-github-username.github.io的文件夹&lt;/p&gt;
+
+&lt;p&gt;打开对应的文件夹，留作后用
+&lt;img src=&quot;https://i.loli.net/2019/08/04/FEmOT52LUZpcnrs.png&quot; alt=&quot;3B497BEE-878C-4B98-A47B-45C98D3B8927.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;在jekyll主题市场挑选自己喜欢的主题并download下载zip包解压缩&quot;&gt;在Jekyll主题市场挑选自己喜欢的主题，并‘download’下载zip包解压缩&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/08/04/kl1fNrbc4oOLuRt.png&quot; alt=&quot;639FAD66-6453-4916-BC32-9BEB47FC671C.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;把解压得到的文件全部复制到前面打开的 空的名为 your-github-username.github.io 的文件夹
+&lt;img src=&quot;https://i.loli.net/2019/08/04/Lc736eDp41PvyOl.png&quot; alt=&quot;66A73D2B-7577-4FEA-B391-608A42D86835.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;利用github-desktopcommit上传文件夹改动&quot;&gt;利用Github Desktop，commit上传文件夹改动&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/08/04/Nv6aLTfRtWzO81H.png&quot; alt=&quot;92744240-172F-4753-8C6C-EE169EED19CF.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;打开浏览器输入-your-github-usernamegithubio-不出意外你的博客就搭好了&quot;&gt;打开浏览器，输入 your-github-username.github.io ，不出意外，你的博客就搭好了&lt;/h3&gt;
+&lt;p&gt;（假如没有显示，请过一段时间，等服务器响应改动）&lt;/p&gt;
+
+&lt;h3 id=&quot;后续要写文章直接在_post文件夹下复制已有的markdown文件修改内容与标题即可&quot;&gt;后续要写文章？直接在_post文件夹下复制已有的markdown文件，修改内容与标题即可&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/08/04/klwY2XBejA6nu8M.png&quot; alt=&quot;4EFF24B9-3205-43CB-A3CB-E2FA1C4C3AA0.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;写完后，再次commit改动~这样你的博客就能像你期望的那样，更新发布文章了。&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 04 Aug 2019 13:33:36 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/04/Github-Page-+-Jekyll-%E8%B8%A9%E4%BA%86%E6%97%A0%E6%95%B0%E4%B8%AA%E5%9D%91%E5%90%8E-%E6%88%90%E5%8A%9F%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/04/Github-Page-+-Jekyll-%E8%B8%A9%E4%BA%86%E6%97%A0%E6%95%B0%E4%B8%AA%E5%9D%91%E5%90%8E-%E6%88%90%E5%8A%9F%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</guid>
+        
+        <category>技术学习</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

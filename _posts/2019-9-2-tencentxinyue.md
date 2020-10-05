@@ -64,20 +64,20 @@ UGC互动社区
 
 ### 发展路径规划
 
-![https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027389-61478928-98c3-4b9d-b9aa-8e09c8bf388e.png#align=left&display=inline&height=271&originHeight=593&originWidth=1555&size=0&status=done&width=711](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027389-61478928-98c3-4b9d-b9aa-8e09c8bf388e.png#align=left&display=inline&height=271&originHeight=593&originWidth=1555&size=0&status=done&width=711)
+![1](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027389-61478928-98c3-4b9d-b9aa-8e09c8bf388e.png#align=left&display=inline&height=271&originHeight=593&originWidth=1555&size=0&status=done&width=711)
 
 1. 前期仅对心悦玩家开放，从少量游戏开始，逐步摸索产品、运营方案，留存促活心悦玩家
 2. 品牌升级后，社区成为产品主要形态，下沉导入潜力付费玩家、普通玩家，刺激消费氪金
 
 ### 功能框架
 
-![https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027474-f23d8fc5-519d-4366-8266-d2248d488807.png#align=left&display=inline&height=267&originHeight=682&originWidth=1736&size=0&status=done&width=680](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027474-f23d8fc5-519d-4366-8266-d2248d488807.png#align=left&display=inline&height=267&originHeight=682&originWidth=1736&size=0&status=done&width=680)
+![2](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027474-f23d8fc5-519d-4366-8266-d2248d488807.png#align=left&display=inline&height=267&originHeight=682&originWidth=1736&size=0&status=done&width=680)
 
-![https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027471-a610aad2-892a-4694-bc18-39a8c90ce15c.png#align=left&display=inline&height=622&originHeight=920&originWidth=1006&size=0&status=done&width=680](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027471-a610aad2-892a-4694-bc18-39a8c90ce15c.png#align=left&display=inline&height=622&originHeight=920&originWidth=1006&size=0&status=done&width=680)
+![3](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027471-a610aad2-892a-4694-bc18-39a8c90ce15c.png#align=left&display=inline&height=622&originHeight=920&originWidth=1006&size=0&status=done&width=680)
 
 ### 用户链路行为
 
-![https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027380-b0997237-63db-41d3-8060-793b4aae1f0b.png#align=left&display=inline&height=355&originHeight=508&originWidth=1066&size=0&status=done&width=745](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027380-b0997237-63db-41d3-8060-793b4aae1f0b.png#align=left&display=inline&height=355&originHeight=508&originWidth=1066&size=0&status=done&width=745)
+![4](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027380-b0997237-63db-41d3-8060-793b4aae1f0b.png#align=left&display=inline&height=355&originHeight=508&originWidth=1066&size=0&status=done&width=745)
 
 *社区为产品主体后，充值/礼包领取为后置位行为，链路更通顺
 
@@ -94,27 +94,27 @@ UGC互动社区
 
 ## 二、具体思路举例
 
-![https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027388-d09cde6f-77d4-4e03-842e-67c050411478.png#align=left&display=inline&height=427&originHeight=892&originWidth=1420&size=0&status=done&width=680](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027388-d09cde6f-77d4-4e03-842e-67c050411478.png#align=left&display=inline&height=427&originHeight=892&originWidth=1420&size=0&status=done&width=680)
+![5](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027388-d09cde6f-77d4-4e03-842e-67c050411478.png#align=left&display=inline&height=427&originHeight=892&originWidth=1420&size=0&status=done&width=680)
 
 ### 提升社区面板打开率
 
-![https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027375-d68f2bc8-f35c-4eda-88e9-218bf51e732f.png#align=left&display=inline&height=155&originHeight=362&originWidth=1588&size=0&status=done&width=680](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027375-d68f2bc8-f35c-4eda-88e9-218bf51e732f.png#align=left&display=inline&height=155&originHeight=362&originWidth=1588&size=0&status=done&width=680)
+![6](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027375-d68f2bc8-f35c-4eda-88e9-218bf51e732f.png#align=left&display=inline&height=155&originHeight=362&originWidth=1588&size=0&status=done&width=680)
 
-![https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027418-53160f9d-e37f-491a-9d7b-255e29c859e6.png#align=left&display=inline&height=589&originHeight=1584&originWidth=1440&size=0&status=done&width=535](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027418-53160f9d-e37f-491a-9d7b-255e29c859e6.png#align=left&display=inline&height=589&originHeight=1584&originWidth=1440&size=0&status=done&width=535)
+![7](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027418-53160f9d-e37f-491a-9d7b-255e29c859e6.png#align=left&display=inline&height=589&originHeight=1584&originWidth=1440&size=0&status=done&width=535)
 
 ### 提升UGC发表率
 
-![https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027410-c9d61681-b6e4-4c66-bcc9-25a7f664af13.png#align=left&display=inline&height=323&originHeight=724&originWidth=1522&size=0&status=done&width=680](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027410-c9d61681-b6e4-4c66-bcc9-25a7f664af13.png#align=left&display=inline&height=323&originHeight=724&originWidth=1522&size=0&status=done&width=680)
+![8](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027410-c9d61681-b6e4-4c66-bcc9-25a7f664af13.png#align=left&display=inline&height=323&originHeight=724&originWidth=1522&size=0&status=done&width=680)
 
 ### 提升评论发表率
 
-![https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027400-feda8fc7-5c3c-4345-912e-d99d50aa4df7.png#align=left&display=inline&height=372&originHeight=954&originWidth=1746&size=0&status=done&width=680](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027400-feda8fc7-5c3c-4345-912e-d99d50aa4df7.png#align=left&display=inline&height=372&originHeight=954&originWidth=1746&size=0&status=done&width=680)
+![9](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027400-feda8fc7-5c3c-4345-912e-d99d50aa4df7.png#align=left&display=inline&height=372&originHeight=954&originWidth=1746&size=0&status=done&width=680)
 
 ### 建立玩家间关系链
 
-![https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027404-7538c5d8-dfc9-47fa-a041-4bd97b282573.png#align=left&display=inline&height=214&originHeight=552&originWidth=1756&size=0&status=done&width=680](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027404-7538c5d8-dfc9-47fa-a041-4bd97b282573.png#align=left&display=inline&height=214&originHeight=552&originWidth=1756&size=0&status=done&width=680)
+![10](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027404-7538c5d8-dfc9-47fa-a041-4bd97b282573.png#align=left&display=inline&height=214&originHeight=552&originWidth=1756&size=0&status=done&width=680)
 
-![https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027402-64da94fc-596f-40dc-9021-45e20aa74697.png#align=left&display=inline&height=625&originHeight=1182&originWidth=1286&size=0&status=done&width=680](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027402-64da94fc-596f-40dc-9021-45e20aa74697.png#align=left&display=inline&height=625&originHeight=1182&originWidth=1286&size=0&status=done&width=680)
+![11](https://cdn.nlark.com/yuque/0/2019/png/246957/1567385027402-64da94fc-596f-40dc-9021-45e20aa74697.png#align=left&display=inline&height=625&originHeight=1182&originWidth=1286&size=0&status=done&width=680)
 
 ### PS：官方活动
 

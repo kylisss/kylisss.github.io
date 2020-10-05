@@ -2,7 +2,7 @@
 title: INIX
 SEOTitle: Kylis's Blog
 header-img: img/home-bg.jpg
-email: kylis@qq.com
+email: ezewyz@outlook.com
 description: "我是Kylis，一个正在路上的PM"
 keyword: "kylis, 产品, Blog"
 url: "https://kylis.cn"              # your host, for absolute URL
@@ -65,10 +65,10 @@ kramdown:
 #netease_comment: false
 
 # Gitalk settings
-comment_gitalk_clientId: 7cab2c1f2d45924cbfb5
-comment_gitalk_clientSecret: b147b59a7072e751d02cefd21ad41e5142cd235a
-comment_gitalk_repo: kylisss.github.io
-github_username: kylisss
+#comment_gitalk_clientId: 7cab2c1f2d45924cbfb5
+#comment_gitalk_clientSecret: b147b59a7072e751d02cefd21ad41e5142cd235a
+#comment_gitalk_repo: kylisss.github.io
+#github_username: kylisss
 
 # Analytics settings
 # Baidu Analytics 

@@ -83,9 +83,9 @@ ga_domain: https://yize.dev
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "  
-  💡当即一吹<br/>
-  💎专业社区灌水，是个产品<br/>
-  👉周五晚上9:00在打星际2
+  💡 当即一吹<br/>
+  💎 专业社区灌水，是个产品<br/>
+  👉 周五晚上9:00在打星际2
   "
 sidebar-avatar: /img/autherimg.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 

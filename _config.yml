@@ -75,7 +75,7 @@ kramdown:
 # ba_track_id: 675f7eecd1f618ffd90d25b92bf3c187
 
 # Google Analytics
-ga_track_id: 'UA-122473135-5'            # Format: UA-xxxxxx-xx
+ga_track_id: UA-122473135-5           # Format: UA-xxxxxx-xx
 ga_domain: https://yize.dev
 
 

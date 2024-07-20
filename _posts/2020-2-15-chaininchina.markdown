@@ -2,8 +2,8 @@
 layout:     post
 title:      "我在国内区块链一线，想和你讲讲我对区块链的浅见"
 subtitle:   "前路漫漫，未来可期"
-date:       2020-2-15 08:00:00
-author:     "kylis"
+date:       2020-2-15
+author:     "Eze"
 catalog:    true  
 tags:       行业分析 思考
 ---

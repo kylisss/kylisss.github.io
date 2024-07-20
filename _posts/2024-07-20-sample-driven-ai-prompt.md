@@ -19,7 +19,7 @@ tags:       AI
 
 **适合人群：**
 
-- 初步了解结构化提示词的用户（如果还不知道什么是结构化提示词，推荐阅读：[结构化提示词系统论述： 构建高性能 Prompt 之路](https://langgptai.feishu.cn/wiki/ASXOwDbTEiH9CUkXFA5cLHumn88)；）
+- 初步了解结构化提示词的用户（如果还不知道什么是结构化提示词，推荐阅读：[结构化提示词系统论述： 构建高性能 Prompt 之路](https://langgptai.feishu.cn/wiki/ASXOwDbTEiH9CUkXFA5cLHumn88)）
 - 在实际运用时，不知道怎么写出能够让AI生成符合内心预期结果的提示词的用户
 
 ## 引言

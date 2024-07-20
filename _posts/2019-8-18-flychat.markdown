@@ -2,8 +2,8 @@
 layout:     post
 title:      "以兴趣小组做社交，飞聊产品分析"
 subtitle:   "框架虽好，实现不易"
-date:       2019-8-18 08:00:00
-author:     "kylis"
+date:       2019-8-18
+author:     "Eze"
 catalog:    true
 tags:       产品分析
 ---

@@ -1,13 +1,11 @@
 ---
-
 layout:     post
 title:      Prompt 工程｜样例驱动的渐进式引导法：利用 AI 高效设计提示词 ，生成预期内容
 subtitle:   "分享一个有用的 Prompt 设计策略"
 date:       2024-07-20
 author:     "Eze"
 catalog:    true  
-tags:       产品分析
-
+tags:       AI
 ---
 
 ## 阅读提示

@@ -3,8 +3,8 @@
 layout:     post
 title:      基于用户投票的排名算法
 subtitle:   "排名算法的粗略介绍"
-date:       2019-08-09 09:00:00
-author:     "kylis"
+date:       2019-08-09
+author:     "Eze"
 catalog:    true
 tags:       技术学习
 

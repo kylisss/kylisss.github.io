@@ -3,8 +3,8 @@
 layout:     post
 title:      流利阅读产品分析&方案
 subtitle:   "付费转化高挺好，那不付费的呢？"
-date:       2019-09-30 09:00:00
-author:     "kylis"
+date:       2019-09-30
+author:     "Eze"
 catalog:    true
 tags:       产品分析
 

@@ -2,8 +2,8 @@
 layout:     post
 title:      "一个活跃社群怎么炼成|社群运营框架"
 subtitle:   "无他，唯有用心尔"
-date:       2019-9-2 09:00:00
-author:     "kylis"
+date:       2019-9-2
+author:     "Eze"
 catalog:    true
 tags:       运营心得
 ---

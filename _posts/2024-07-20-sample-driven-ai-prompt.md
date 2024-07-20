@@ -8,6 +8,8 @@ catalog:    true
 tags:       AI
 ---
 
+![](https://s2.loli.net/2024/07/20/UaIGcPtlEjMHBeo.jpg)
+
 ## 阅读提示
 
 **核心看点：**

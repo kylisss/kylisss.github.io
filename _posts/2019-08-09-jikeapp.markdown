@@ -3,8 +3,8 @@
 layout:     post
 title:      以即刻app为例，社交社区产品行业分析
 subtitle:   "以自己目前粗浅的经验，分析一下社区社交产品行业"
-date:       2019-08-09 08:00:00
-author:     "kylis"
+date:       2019-08-09
+author:     "Eze"
 catalog:    true  
 tags:       产品分析
 

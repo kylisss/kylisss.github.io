@@ -3,8 +3,8 @@
 layout:     post
 title:      谁来解决特斯拉们的数据困境？｜车联网数据监管的破局之道
 subtitle:   "特斯拉作为数据的提供方，数据是可信的吗？我觉得不可信。"
-date:       2021-04-26 08:00:00
-author:     "kylis"
+date:       2021-04-26
+author:     "Eze"
 catalog:    true  
 tags:       行业分析
 

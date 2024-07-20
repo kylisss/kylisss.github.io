@@ -2,8 +2,8 @@
 layout:     post
 title:      "心悦社区，给心悦俱乐部做个UGC社区"
 subtitle:   "高价值用户值得用心对待"
-date:       2019-9-2 08:00:00
-author:     "kylis"
+date:       2019-9-2
+author:     "Eze"
 catalog:    true
 tags:       产品策划
 ---

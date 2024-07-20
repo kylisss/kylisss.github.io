@@ -1,11 +1,11 @@
 # Site settings
-title: INIX
-SEOTitle: Kylis's Blog
+title: Eze's Blog
+SEOTitle: Eze's Blog
 header-img: img/home-bg.webp
 email: ezewyz@outlook.com
-description: "我是Kylis，一个正在路上的PM"
-keyword: "kylis, 产品, Blog"
-url: "https://eze.is"              # your host, for absolute URL
+description: "我是一泽Eze"
+keyword: "Eze, 产品, Blog"
+url: "https://my.eze.is"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.

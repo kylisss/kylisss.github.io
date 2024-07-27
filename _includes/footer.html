@@ -115,19 +115,6 @@
 </script>
 
 
-<!-- Google Analytics -->
-{% if site.ga_track_id %}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_track_id }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '{{ site.ga_track_id }}');
-</script>
-{% endif %}
-
-
 <!-- Baidu Tongji -->
 {% if site.ba_track_id %}
 <script>
@@ -145,6 +132,15 @@
 </script>
 {% endif %}
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BCFEGLBK71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BCFEGLBK71');
+</script>
 
 <!-- Side Catalog -->
 {% unless page.no-catalog %}

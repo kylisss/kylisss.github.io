@@ -75,8 +75,8 @@ kramdown:
 # ba_track_id: 675f7eecd1f618ffd90d25b92bf3c187
 
 # Google Analytics
-ga_track_id: ‘UA-122473135-5’           # Format: UA-xxxxxx-xx
-ga_domain: https://yize.dev
+ga_track_id: ‘G-BCFEGLBK71’           # Format: UA-xxxxxx-xx
+ga_domain: https://my.eze.is
 
 
 
@@ -88,7 +88,7 @@ sidebar-about-description: "
   👉 周五晚上9:00在打星际2<br/>
   📨 ezewyz@outlook.com
   "
-sidebar-avatar: /img/autherimg.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/auther-img.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

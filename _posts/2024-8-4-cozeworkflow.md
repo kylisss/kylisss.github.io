@@ -918,7 +918,8 @@ async def main(args: Args) -> Output:
 
 # 其他问题
 
-1. **如何判断自己的任务/Prompt 是否需要拆解为工作流？**
+1）**如何判断自己的任务/Prompt 是否需要拆解为工作流？**
+
    构建稳定可用的 AI Agent 是一个需要不断调试和迭代的过程。Agent 工程的终极目标是打造出流程尽量简洁、Prompt 尽量精炼、生成结果最稳定的智能体。
    
    我们通常从当前性能最强的 LLM（如 ChatGPT-4 和 Claude 3.5 sonnet）着手，先用单条 Prompt 或 Prompt Chain（可以简单理解为与 LLM 连续对话，引导 LLM 逐步完成复杂的任务）来测试任务的执行质量和稳定性。然后，根据实际执行情况、最终投产使用的 LLM，逐步拆解子任务，降低 LLM 执行单任务的难度，直到达成工程目标。
@@ -926,7 +927,9 @@ async def main(args: Args) -> Output:
    一般而言，对于类似文中这种场景多样、结构复杂、对输出格式要求严格的内容，我们基本可以预见到需要将其拆解为工作流。
    
    此外，鉴于 LLM 只能处理文本输入输出的特性，如果涉及生成多媒体内容或从网络自主获取额外信息等能力，必然需要通过工作流来调用相应的插件。
-2. **只用了一段 Prompt 的 Agent，还算 AI Agent 吗？**
+   
+2）**只用了一段 Prompt 的 Agent，还算 AI Agent 吗？**
+
    算。详见[关于 LLM、Prompt、Agent 的概念理解](https://zkv549gmz8.feishu.cn/wiki/KhXkwqngAitUufkHNUUcPP57nDb?from=from_copylink)
 
 # 拓展阅读
